@@ -1,5 +1,7 @@
 .about {
     padding: rem(42px) rem(48px) rem(27px);
+    position: relative;
+    z-index: 2;
 
     &-wrap {
         background: url(../images/bg-about.jpg) no-repeat;

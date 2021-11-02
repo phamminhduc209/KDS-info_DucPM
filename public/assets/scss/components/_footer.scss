@@ -1,6 +1,8 @@
 .footer {
     background: $white;
     padding: 27px 0 61px;
+    position: relative;
+    z-index: 2;
 
     &-menu {
         display: flex;

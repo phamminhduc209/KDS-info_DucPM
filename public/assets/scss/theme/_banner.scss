@@ -1,6 +1,8 @@
 .banner {
     max-height: rem(674px);
     overflow: hidden;
+    position: relative;
+    z-index: 2;
 
     .content-section {
         --scroll-length: 1.5;

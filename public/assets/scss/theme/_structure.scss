@@ -1,5 +1,7 @@
 .structure {
     padding: rem(70px) 0;
+    position: relative;
+    z-index: 2;
     --data-column: 2;
   	--gap: 60px;
 

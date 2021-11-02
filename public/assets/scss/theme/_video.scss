@@ -1,5 +1,7 @@
 .video {
     margin-bottom: rem(134px);
+    position: relative;
+    z-index: 2;
 
     &-wrap {
         max-width: 1224px;

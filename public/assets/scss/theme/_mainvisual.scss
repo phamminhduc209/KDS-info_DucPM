@@ -5,6 +5,7 @@
     padding-bottom: 60%;
     overflow: hidden;
     position: relative;
+    z-index: 2;
     max-height: rem(978px);
 
     @include mq('md', max) {

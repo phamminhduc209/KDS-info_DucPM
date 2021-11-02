@@ -2,16 +2,6 @@
     position: relative;
     overflow: hidden;
 
-    &-container {
-        @extend %absolute;
-        z-index: 1;
-    }
-
-    &-svg {
-        width: 100%;
-        height: 100%;
-    }
-
     &-bg {
         @extend %absolute;
         background: url(../images/bg-intro.png) no-repeat;

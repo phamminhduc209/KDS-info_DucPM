@@ -1,6 +1,9 @@
 .features {
     --data-column: 2;
   	--gap: 60px;
+      
+    position: relative;
+    z-index: 2;
 
     &-items {
         display: flex;

@@ -59,9 +59,9 @@ local.init = function () {
   local.winHeight = $(window).height();
   local.svg = document.getElementsByTagName("svg")[0];
   local.createGradient(local.svg, "baseGrad", "linearGradient", [
-    { offset: "0%", "stop-color": "#DDD", "stop-opacity": "0" },
-    { offset: "50%", "stop-color": "#DDD" },
-    { offset: "100%", "stop-color": "#DDD", "stop-opacity": "0" },
+    { offset: "0%", "stop-color": "#F2F8F8", "stop-opacity": "0" },
+    { offset: "50%", "stop-color": "#FFFFFF" },
+    { offset: "100%", "stop-color": "#F2F8F8", "stop-opacity": "0" },
   ]);
 
   local.totalElements = 100;

@@ -2,6 +2,8 @@
     --data-column: 3;
   	--gap: 16px;
     padding: rem(112px) 0 rem(60px);
+    position: relative;
+    z-index: 2;
 
     &-items {
         display: flex;

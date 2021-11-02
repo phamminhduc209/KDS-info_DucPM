@@ -1,6 +1,7 @@
 .page-bg {
-    background: url(../images/bg-page.svg) no-repeat;
+    background: url(../images/bg-page.png) repeat-y;
     background-size: cover;
+    background-position: top center;
 }
 
 .pc {
@@ -14,6 +15,21 @@
     display: none !important;
     @include mq('md', max) {
         display: block !important;
+    }
+}
+
+
+.light-curtains {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    &-svg {
+        width: 100vw;
+        height: 100vh;
     }
 }
 
