@@ -1,0 +1,49 @@
+.footer {
+    background: $white;
+    padding: 27px 0 61px;
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: rem(47px);
+
+        &__item {
+            &:not(:last-child) {
+                margin-right: 57px;
+            }
+        }
+
+        &__link {
+            color: $gray-100;
+            font-family: $font-YuGothic-Medium;
+            font-size: rem(18px);
+            line-height: 2.6;
+
+            &::after {
+                content: "";
+                background: url(../images/icn-open-new.svg) no-repeat;
+                width: 13px;
+                height: 13px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &-copyright {
+        color: $gray-100;
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(16px);
+        text-align: center;
+    }
+
+    @include mq('md', max) {
+        padding: 41px 0 33px;
+
+        &-menu {
+            display: none;
+        }
+    }
+}

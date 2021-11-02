@@ -1,0 +1,14 @@
+.mainvisual {
+    background: url(../images/bg-mainvisual.jpg) no-repeat;
+    background-size: 100% 100%;
+	background-position: top center;
+    padding-bottom: 60%;
+    overflow: hidden;
+    position: relative;
+    max-height: rem(978px);
+
+    @include mq('md', max) {
+        background-image: url(../images/bg-mainvisual-sp.jpg);
+        min-height: rem(650px);
+    }
+}

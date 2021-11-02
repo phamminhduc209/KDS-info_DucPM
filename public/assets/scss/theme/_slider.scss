@@ -1,0 +1,38 @@
+$animationSpeed: 80s;
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-396px * 7))}
+}
+
+@keyframes scroll2 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-396px * 10))}
+}
+
+.slider {
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	
+	.slide-track {
+		display: flex;
+		width: calc(990px * 14);
+
+        &--1 {
+            -webkit-animation: scroll $animationSpeed linear infinite;
+            -moz-animation: scroll $animationSpeed linear infinite;
+            animation: scroll $animationSpeed linear infinite;
+        }
+
+        &--2 {
+            -webkit-animation: scroll2 $animationSpeed linear infinite;
+            -moz-animation: scroll2 $animationSpeed linear infinite;
+            animation: scroll2 $animationSpeed linear infinite;
+        }
+	}
+	
+	.slide {
+		height: 240px;
+		width: 396px;
+	}
+}

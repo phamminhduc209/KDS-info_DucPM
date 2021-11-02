@@ -1,0 +1,140 @@
+.target {
+    --data-column: 3;
+  	--gap: 16px;
+    padding: rem(112px) 0 rem(60px);
+
+    &-items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        margin-left: calc(var(--gap) * -1);
+
+        @media all and (-ms-high-contrast:none) {
+            margin: 0 rem(-8px);
+        }
+    }
+
+    &-item {
+        width: calc((100% / var(--data-column)) - (var(--gap)));
+        margin: 0 0 57PX calc(var(--gap));
+
+        @media all and (-ms-high-contrast:none) {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 0 rem(8px);
+            margin-bottom: rem(16px);
+        }
+
+        &:hover {
+            .target-media {
+                img {
+                    transform: scale(1.2);
+                      transition: transform .5s ease-out;
+                }
+            }
+        }
+    }
+
+    &-media {
+        overflow: hidden;
+        position: relative;
+
+        img {
+              transition: transform .5s ease-out;
+        }
+    }
+
+    &-info {
+        margin-top: rem(23px);
+    }
+
+    &-title {
+        color: $black;
+        font-weight: bold;
+        font-size: rem(18px);
+        line-height: 1.6;
+    }
+
+    &-des {
+        color: $gray-200;
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(16px);
+        line-height: 1.8;
+
+        &--sp {
+            display: none;
+        }
+    }
+
+    &-size {
+        color: $dark;
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(16px);
+        line-height: 1.8;
+    }
+
+    &-price {
+        color: $black-200;
+        font-weight: bold;
+        font-size: rem(18px);
+        display: flex;
+        align-items: center;
+
+        &__unit {
+            margin-left: rem(21px);
+        }
+
+        &__num {
+            font-size: rem(24px);
+        }
+    }
+
+    @include mq('md', max) {
+        --data-column: 2;
+  	    --gap: 21;
+    }
+}
+
+@include mq('md', max) {
+    .target {
+        --data-column: 2;
+        --gap: 21px;
+        padding: rem(62px) 0 rem(20px);
+
+        &-item {
+            margin-bottom: rem(18px);
+        }
+
+        &-box {
+            background: $white;
+            border: 1px solid $gray4;
+            border-radius: rem(4px);
+            filter: drop-shadow(rem(1px) rem(1px) rem(3px) rgb(0 0 0 / 13%));
+            height: 100%;
+        }
+
+        &-info {
+            padding: rem(17px);
+        }
+
+        &-size {
+            color: $black-200;
+            span {
+                display: none;
+            }
+        }
+
+        &-des {
+            &--sp {
+                font-size: rem(12px);
+                letter-spacing: -0.1rem;
+                margin-top: rem(10px);
+                display: block;
+            }
+        }
+
+        &-price {
+            display: none;
+        }
+    }
+}

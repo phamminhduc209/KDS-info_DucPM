@@ -1,0 +1,33 @@
+.c-title {
+    text-align: center;
+    &__main {
+        font-family: $font-montserrat;
+        color: $blue;
+        font-weight: 400;
+        font-size: rem(22px);
+        margin-bottom: rem(8px);
+        text-transform: uppercase;
+    }
+
+    &__sub {
+        color: $black;
+        font-family: $font-YuGothic-Medium;
+        font-weight: 400;
+        font-size: rem(38px);
+        line-height: 1.47;
+    }
+}
+
+@include mq('md', max) {
+    .c-title {
+        &__main {
+            font-size: rem(16px);
+            margin-bottom: 0;
+        }
+    
+        &__sub {
+            font-size: rem(29px);
+            line-height: 1.6;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.page-bg {
+    background: url(../images/bg-page.svg) no-repeat;
+    background-size: cover;
+}
+
+.pc {
+    display: block !important;
+    @include mq('md', max) {
+        display: none !important;
+    }
+}
+
+.sp {
+    display: none !important;
+    @include mq('md', max) {
+        display: block !important;
+    }
+}
+
+%absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

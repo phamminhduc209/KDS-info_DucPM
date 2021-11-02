@@ -1,0 +1,105 @@
+.intro {
+    position: relative;
+    overflow: hidden;
+
+    &-container {
+        @extend %absolute;
+        z-index: 1;
+    }
+
+    &-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-bg {
+        @extend %absolute;
+        background: url(../images/bg-intro.png) no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    &-wrap {
+        padding: rem(191px) 0 rem(215px);
+        position: relative;
+        z-index: 3;
+    }
+
+    &-text {
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(18px);
+        line-height: 2.3;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: rem(70px);
+        }
+    }
+}
+
+@include mq('md', max) {
+    .intro {
+        &-bg {
+            @extend %absolute;
+            background-image: url(../images/bg-intro-sp.png);
+        }
+    
+        &-wrap {
+            padding: rem(74px) 0 rem(873px);
+            position: relative;
+            z-index: 3;
+        }
+    
+        &-text {
+            font-family: $font-YuGothic-Medium;
+            font-size: rem(18px);
+            line-height: 2.3;
+            text-align: center;
+    
+            &:not(:last-child) {
+                margin-bottom: rem(70px);
+            }
+        }
+    }
+}
+
+// .parallax {
+//     &-img {
+//         position: absolute;
+//         top: 0;
+//         left: 50%;
+//         pointer-events: none;
+//         transform: translateY(-50%);
+//     }
+// }
+
+// @include mq('md', min) {
+//     .intro {
+//         &-parallax {
+//             &-01 {
+//                 top: rem(191px);
+//                 left: rem(64px);
+//             }
+//             &-02 {
+//                 top: rem(408px);
+//                 left: rem(37px);
+//             }
+//             &-03 {
+//                 top: rem(744px);
+//                 left: rem(114px);
+//             }
+//             &-04 {
+//                 top: rem(99px);
+//                 left: rem(1208px);
+//             }
+//             &-05 {
+//                 top: rem(395px);
+//                 right: rem(179px);
+//             }
+//             &-06 {
+//                 top: rem(727px);
+//                 right: rem(66px);
+//             }
+//         }
+//     }
+// }

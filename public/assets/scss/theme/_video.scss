@@ -1,0 +1,19 @@
+.video {
+    margin-bottom: rem(134px);
+
+    &-wrap {
+        max-width: 1224px;
+        margin: 0 auto;
+    }
+    
+    &-image {
+        width: 100%;
+    }
+}
+
+@include mq('md', max) {
+    .video {
+        margin-bottom: rem(60px);
+    }
+    
+}

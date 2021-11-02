@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+@font-face {
+    font-family: 'Yu Gothic';
+    src: url('../fonts/YuGothic/YuGothic-Bold.eot');
+    src: url('../fonts/YuGothic/YuGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuGothic/YuGothic-Bold.woff2') format('woff2'),
+        url('../fonts/YuGothic/YuGothic-Bold.woff') format('woff'),
+        url('../fonts/YuGothic/YuGothic-Bold.ttf') format('truetype'),
+        url('../fonts/YuGothic/YuGothic-Bold.svg#YuGothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Yu Gothic Medium';
+    src: url('../fonts/YuGothicMedium/YuGothic-Medium.eot');
+    src: url('../fonts/YuGothicMedium/YuGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/YuGothicMedium/YuGothic-Medium.woff2') format('woff2'),
+        url('../fonts/YuGothicMedium/YuGothic-Medium.woff') format('woff'),
+        url('../fonts/YuGothicMedium/YuGothic-Medium.ttf') format('truetype'),
+        url('../fonts/YuGothicMedium/YuGothic-Medium.svg#YuGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,109 @@
+.structure {
+    padding: rem(70px) 0;
+    --data-column: 2;
+  	--gap: 60px;
+
+    &-items {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        margin-left: calc(var(--gap) * -1);
+
+        @media all and (-ms-high-contrast:none) {
+            margin: 0 rem(-30px);
+        }
+    }
+
+    &-item {
+        width: calc((100% / var(--data-column)) - (var(--gap)));
+        margin: 0 0 calc(var(--gap)) calc(var(--gap));
+
+        @media all and (-ms-high-contrast:none) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 rem(30px);
+            margin-bottom: rem(60px);
+        }
+
+        &:hover {
+            .structure-media {
+                img {
+                    transform: scale(1.2);
+                      transition: transform .5s ease-out;
+                }
+            }
+        }
+    }
+
+    &-box {
+        background: $white;
+        padding: rem(27px) rem(30px) rem(33px);
+    }
+
+    &-media {
+        overflow: hidden;
+        position: relative;
+
+        img {
+              transition: transform .5s ease-out;
+        }
+    }
+
+    &-info {
+        margin-top: rem(27px);
+    }
+
+    &-title {
+        font-weight: bold;
+        font-size: rem(28px);
+        line-height: 1.67;
+    }
+
+    &-text {
+        color: $black2;
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(16px);
+        line-height: 1.8;
+        margin-top: rem(23px);
+        letter-spacing: -0.01rem;
+    }
+
+    .text-blue {
+        font-family: $font-YuGothic-Medium;
+        font-size: rem(16px);
+        margin-top: rem(32px);
+    }
+}
+
+@include mq('md', max) {
+    .structure {
+        --data-column: 2;
+  	    --gap: 0;
+
+        &-item {
+            margin-bottom: rem(16px);
+        }
+    
+        &-box {
+            background: $white;
+            padding: rem(27px) rem(25px) rem(43px);
+            border-radius: rem(4px);
+        }
+    
+        &-info {
+            margin-top: rem(27px);
+        }
+    
+        &-title {
+            font-size: rem(22px);
+        }
+
+        &-text {
+            margin-top: rem(18px);
+        }
+
+        .text-blue {
+            margin-top: rem(28px);
+        }
+    }
+}

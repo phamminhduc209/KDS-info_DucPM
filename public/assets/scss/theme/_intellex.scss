@@ -1,0 +1,87 @@
+.intellex {
+    position: relative;
+
+    &-slide {
+        &:before {
+            content: "";
+            background: rgb(255 255 255 / 85%);
+            @extend %absolute;
+            z-index: 2;
+        }
+    }
+
+    &-wrap {
+        @extend %absolute;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+    }
+
+    &-info {
+        text-align: center;
+    }
+
+    &-btn {
+        color: $white;
+        border-radius: rem(4px);
+        background: $blue;
+        font-size: rem(22px);
+        font-weight: bold;
+        max-width: rem(582px);
+        margin: rem(50px) auto 0;
+        line-height: 2.1;
+        padding: rem(23px) 0 rem(19px);
+        display: block;
+        border-color: transparent;
+        position: relative;
+
+        &::after {
+            content: "";
+            background: url(../images/icn-arrow-circle.svg) no-repeat;
+            width: rem(22px);
+            height: rem(22px);
+            position: absolute;
+            top: rem(35px);
+            right: rem(41px);
+            transition: right .3s;
+        }
+
+        &:hover {
+            color: $white;
+
+            &::after {
+                right: rem(35px);
+                transition: right .3s;
+            }
+        }
+    }
+}
+
+@include mq('md', max) {
+    .intellex {
+        &-btn {
+            color: $white;
+            border-radius: rem(4px);
+            background: $blue;
+            font-size: rem(22px);
+            font-weight: bold;
+            max-width: rem(582px);
+            margin: rem(50px) auto 0;
+            line-height: 2.1;
+            padding: rem(23px) 0 rem(19px);
+            display: block;
+            border-color: transparent;
+            position: relative;
+    
+            &::after {
+                right: rem(30px);
+            }
+    
+            &:hover {
+                &::after {
+                    right: rem(20px);
+                }
+            }
+        }
+    }
+}
